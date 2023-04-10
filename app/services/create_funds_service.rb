@@ -10,13 +10,8 @@ class CreateFundsService
 
 
   def call
-    puts "Da"
-    puts @amount
-    puts @account_recipient_id
     recipient_account = Account.find_by(account_number: @account_recipient_id)
     sender_account = Account.find_by(account_number: @account_sender_id)
-    puts sender_account
-    puts "LL"
     if (sender_account.balance - @amount) >= 0.0
       transaction = Transaction.new(amount: @amount,
                       purpose: @purpose,
@@ -31,7 +26,7 @@ class CreateFundsService
         end
       end
     else
-      return render(json: return_error_formatted_json('Invalid Amount' ), status: 404)
+      raise "Money exceed the current Balance"
     end
     return transaction
   end
