@@ -25,7 +25,7 @@ Solution:
     * CMD (rails s)
       Heroku-Server Link: https://dry-citadel-31354.herokuapp.com
     * View on any API Testing Platform (eg: POSTMAN)
-    * Collection Link (  )
+    * Collection Link ( https://api.postman.com/collections/8662553-64387f6a-c43a-487f-b07e-7d1fd82350bd?access_key=PMAT-01GXNG126ZK6WF5AF19GVF8KQ4 )
 
 # Run the Rails Application using Docker
 
