@@ -23,6 +23,7 @@ Solution:
 
 * Running instructions:
     * CMD (rails s)
+      Heroku-Server Link: https://dry-citadel-31354.herokuapp.com
     * View on any API Testing Platform (eg: POSTMAN)
     * Collection Link (  )
 
@@ -62,6 +63,7 @@ There is a Api Controllers having All the implementations.
 1. `POST /users` Create a New User
    ```
    POST: localhost:3000/api/v1/users
+   Server-Link: https://dry-citadel-31354.herokuapp.com/api/v1/users
    Headers: { 'Content-Type' => 'application/vnd.api+json', 'username' => 'Hamid', 'tokens' => '1token' }
    Params: { 'name' => 'Hamid Iqbal', 'email' => 'kh.hamidkhan@gmail.com', 'username' => 'hamidkhan598', 'authentication_token' => '1ctoken' }
     ```
@@ -70,6 +72,7 @@ There is a Api Controllers having All the implementations.
 2. `GET /accounts` Listed all Accounts.
    ```
    GET: localhost:3000/api/v1/accounts
+   Server-Link: https://dry-citadel-31354.herokuapp.com/api/v1/accounts
    Headers: { 'Content-Type' => 'application/vnd.api+json', 'username' => 'Hamid', 'tokens' => '1token' }
     ```
    ![api](public/list_accounts.png)
@@ -77,6 +80,7 @@ There is a Api Controllers having All the implementations.
 3. `POST /accounts` Create new Account for specific user
    ```
    POST: localhost:3000/api/v1/accounts
+   Server-Link: https://dry-citadel-31354.herokuapp.com/api/v1/accounts
    Headers: { 'Content-Type' => 'application/vnd.api+json', 'username' => 'Hamid', 'tokens' => '1token' }
    Params: { 'account_type' => 'current', 'account_number' => 'GB23TCQT37952225206162', 'balance' => '55' }
     ```
@@ -85,6 +89,7 @@ There is a Api Controllers having All the implementations.
 4. `POST /transactions` Create new Transaction for specific user
    ```
    POST: localhost:3000/api/v1/transactions
+   Server-Link: https://dry-citadel-31354.herokuapp.com/api/v1/transactions
    Headers: { 'Content-Type' => 'application/vnd.api+json', 'username' => 'Hamid', 'tokens' => '1token' }
    Params: { 'amount' => '2', 'purpose' => 'Testing transcations', 'sender_account_number' => 'GB34VUUR10149528745726', 'recipient_account_number' => 'GB73EBQI41749446954664' }
     ```
@@ -93,6 +98,7 @@ There is a Api Controllers having All the implementations.
 3. `GET /accounts/balance`
    ```
    GET: localhost:3000/api/v1/accounts/balance
+   Server-Link: https://dry-citadel-31354.herokuapp.com/api/v1/accounts/balance
    Headers: { 'Content-Type' => 'application/vnd.api+json', 'username' => 'Hamid', 'tokens' => '3btoken' }
    Params: { 'account_number' => 'GB34VUUR10149528745726' }
     ```

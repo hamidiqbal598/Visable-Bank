@@ -30,6 +30,8 @@ class CreateFundsService
           transaction.account_recipient.increment_account_balance(@amount)
         end
       end
+    else
+      return render(json: return_error_formatted_json('Invalid Amount' ), status: 404)
     end
     return transaction
   end
